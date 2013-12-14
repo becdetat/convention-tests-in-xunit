@@ -8,9 +8,10 @@ using NUnit.Framework;
 
 namespace MyApp.NunitTests
 {
-    public class FibonnaciTest
+    public class FibonacciTest
     {
         [Test]
+        [TestCase(0, 0)]
         [TestCase(1, 1)]
         [TestCase(2, 1)]
         [TestCase(3, 2)]
@@ -22,7 +23,7 @@ namespace MyApp.NunitTests
         [TestCase(16, 987)]
         public void TestNumber(int sequence, int result)
         {
-            Assert.AreEqual(result, FibonnaciGenerator.For(sequence));
+            Assert.AreEqual(result, FibonacciGenerator.For(sequence));
         }
     }
 }

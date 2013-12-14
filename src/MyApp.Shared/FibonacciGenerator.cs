@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyApp.Shared
 {
-    public static class FibonnaciGenerator
+    public static class FibonacciGenerator
     {
         public static int For(int i)
         {
+            if (i == 0)
+                return 0;
             if (i < 3) 
                 return 1;
             if (i < 5)
