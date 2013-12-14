@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainObjectsMustHaveDefaultConstructor.cs" />
     <Compile Include="FibonacciTest.cs" />
     <Compile Include="FibonacciTestUsingClassData.cs" />
+    <Compile Include="FibonacciTestUsingExcelData.cs" />
+    <Compile Include="FibonacciTestUsingPropertyData.cs" />
     <Compile Include="ItShouldHaveTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
